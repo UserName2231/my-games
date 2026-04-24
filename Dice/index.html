@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Игра 1-12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 id="turnInfo">Ход: Игрок 1</h1>
+        
+        <div class="action-area">
+            <button id="rollBtn" onclick="window.rollDice()">Бросить кубики</button>
+            
+            <div id="choiceArea" class="hidden">
+                <h2>Выпало: <span id="diceResult"></span></h2>
+                <div class="choice-buttons">
+                    <button id="sepBtn" onclick="window.chooseSeparate()">По отдельности</button>
+                    <button id="sumBtn" onclick="window.chooseSum()">Сумма</button>
+                    <button id="skipBtn" onclick="window.skipTurn()">Пропустить (Skip)</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="playersArea" class="players-area">
+            </div>
+    </div>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
